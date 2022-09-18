@@ -1,0 +1,87 @@
+.app-layout {
+    min-height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    >.title {
+      font-family: PingFangSC-Medium;
+      font-size: 36px;
+      color: #333333;
+      letter-spacing: 0;
+      font-weight: 500;
+      margin-top: 51px;
+      margin-bottom: 126px;
+      text-align: center;
+      display: block;
+    }
+    .banner {
+      width: 750px;
+      height: 350px;
+      background-image: url('../assets/iPhone_banner@2x.png');
+      background-size: 100% 100%;
+      flex-grow: 1;
+      background-position: left bottom;
+    }
+    .form-wrapper {
+      width: 690px;
+      min-height: 800px;
+      background-color: #fff;
+      box-shadow: 0 0 20px 0 rgba(187,191,196,0.30);
+      border-radius: 32px;
+      margin: 0px 30px 193px;
+      padding: 60px 40px 0px;
+      &.tfa-form {
+        min-height: 860px;
+      }
+      .other-login-option {
+        display: block;
+        text-align: center;
+        padding: 32px 0px 36px;
+        font-size: 28px;
+        color: #3371FF;
+        letter-spacing: 0;
+        font-weight: 400;
+        border-top: 1px solid #D0D3D6;
+        line-height: 1;
+      }
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .app-layout {
+      display: flex;
+      overflow-x: auto;
+      width: 1068px;
+      align-items: center;
+      margin: 0 auto;
+      flex-direction: row-reverse;
+      >.title {
+        display: none;
+      }
+      .banner {
+        width: 560px;
+        height: 640px;
+        background-image: url('../assets/pc_banner.png');
+        background-size: 100% 100%;
+      }
+      .form-wrapper {
+        width: 400px;
+        min-height: 480px;
+        background-color: #fff;
+        box-shadow: 0 0 20px 0 rgba(187,191,196,0.30);
+        border-radius: 12px;
+        padding: 40px 40px 0px;
+        margin: 0px 108px 0px 0px;
+        &.tfa-form {
+          min-height: 480px;
+        }
+        .other-login-option {
+          padding: 24px 0px;
+          font-size: 14px;
+        }
+      }
+    }
+  }

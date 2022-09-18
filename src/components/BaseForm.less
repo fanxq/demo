@@ -1,0 +1,189 @@
+.base-form {
+    .ant-form-item {
+      margin-bottom: 3.733vw;
+      &:first-child {
+        margin-bottom: 6.4vw;
+      }
+    }
+    .error-wrapper {
+      margin: 64px 0px;
+      text-align: center;
+      .error {
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        height: 64px;
+        background-color: #FC6161;
+        display: inline-block;
+        padding: 13px 20px;
+        box-shadow: 0 0 14px 0 rgba(133,137,143,0.40);
+        border-radius: 8px;
+      }
+    }
+    .title {
+      margin: 0;
+      text-align: left;
+      font-family: PingFangSC-Medium;
+      font-size: 48px;
+      color: #333333;
+      letter-spacing: 0;
+      font-weight: 500;
+    }
+    .avatar-wrapper {
+      margin-top: 80px;
+      margin-bottom: 28px;
+      text-align: center;
+      .avatar {
+          width: 168px;
+          height: 168px;
+          display: inline-block;
+          background-image: url('../assets/iphone_tx.png');
+          background-size: 100% 100%;
+      }
+    }
+    
+    .submit-btn {
+      height: 88px;
+      background: #3371FF;
+      border-radius: 12px;
+      width: 100%;
+      font-size: 36px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      font-weight: 400;
+      &[disabled] {
+        color:#FFFFFF; ;
+        background-color:  #BBBFC4;
+        &:hover, &:focus, &:active {
+          background-color:  #BBBFC4;
+        }
+      }
+    }
+    
+    .ant-input-affix-wrapper {
+      height: 11.733vw;
+      border: 1px solid #D0D3D6;
+      border-radius: 1.6vw;
+      padding-left: 4.266vw;
+      font-size: 4.266vw;
+      &:focus {
+        box-shadow: none !important;
+        border-color: #3371FF;
+      }
+      .ant-input-prefix {
+        margin-right: 3.2vw;
+        .icon-email {
+            width: 5.333vw;
+            height: 4.8vw;
+            display: inline-block;
+            background-image: url('../assets/iphone_emall@3x.png');
+            background-size: 100% 100%;
+        }
+        .icon-lock {
+            width: 4.8vw;
+            height: 5.333vw;
+            display: inline-block;
+            background-image: url('../assets/iphone_password@3x.png');
+            background-size: 100% 100%;
+        }
+      }
+      .ant-input {
+        &::placeholder {
+            font-size: 4.266vw;
+            color: #B1B3B8;
+        }
+      }
+    }
+    .ant-input-affix-wrapper-focused {
+      box-shadow: none !important;
+      border-color: #3371FF;
+    }
+
+    .ant-input-affix-wrapper-status-error {
+      border-color:#FA5757;
+    }
+    .ant-form-item-explain-error {
+      font-size: 3.2vw;
+      color: #FB797A;
+      margin-top: 2.666vw;
+      margin-bottom: 3.733vw;
+    }
+}
+  @media screen and (min-width: 750px) {
+    .base-form {
+      .ant-form-item {
+        margin-bottom: 20px;
+        &:first-child {
+          margin-bottom: 28px;
+        }
+      }
+      .title {
+        font-size: 28px;
+      }
+      .avatar-wrapper {
+        margin-top: 32px;
+        margin-bottom: 24px;
+        text-align: center;
+        .avatar {
+            width: 72px;
+            height: 72px;
+            background-image: url('../assets/pc_tx.png');
+        }
+      }
+      .submit-btn {
+        height: 40px;
+        border-radius: 6px;
+        width: 100%;
+        font-size: 16px;
+      }
+      .error-wrapper {
+        margin-top: 24px;
+        margin-bottom: 99px;
+        .error {
+          font-size: 14px;
+          color: #FC6161;
+          background-color: transparent;
+          box-shadow: none;
+          height: auto;
+          padding: 0;
+          line-height: 1;
+        }
+      }
+      
+      .ant-input-affix-wrapper {
+        height: 40px;
+        border-radius: 6px;
+        padding-left: 16px;
+        font-size: 16px;
+        .ant-input-prefix {
+            margin-right: 12px;
+            .icon-email {
+                width: 20px;
+                height: 18px;
+                display: inline-block;
+                background-image: url('../assets/pc_emall.png');
+                background-size: 100% 100%;
+            }
+            .icon-lock {
+                width: 18px;
+                height: 20px;
+                display: inline-block;
+                background-image: url('../assets/pc_password.png');
+                background-size: 100% 100%;
+            }
+        }
+        .ant-input {
+            &::placeholder {
+                font-size: 16px;
+            }
+          }
+      }
+      
+      .ant-form-item-explain-error {
+        font-size: 12px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+    }
+  }
